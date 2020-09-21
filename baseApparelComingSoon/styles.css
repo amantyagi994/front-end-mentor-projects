@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+:root {
+  --DesaturatedRed: #ce9797;
+  --SoftRed: #f96262;
+  --darkGreyishRed: hsl(0, 6%, 24%);
+  --Linear1: 135deg, #ffffff, #fff5f5;
+  --Linear2: 135deg, #f8bfbf, #ee8c8c;
+}
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background: url(images/bg-pattern-desktop.svg);
+  background-size: cover;
+}
+
+.left {
+  height: 100vh;
+  width: 60%;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(images/bg-pattern-desktop.svg);
+  background-size: cover;
+}
+
+.right {
+  height: 100vh;
+}
+
+.right img {
+  height: 100%;
+  width: 100%;
+}
+
+.logoContainer {
+  width: 450px;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.imagemobile {
+  opacity: 0;
+  display: none;
+}
+
+/* media queries */
+
+@media screen and (max-width: 375px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main {
+    height: auto;
+  }
+
+  .left {
+    height: auto;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .logoContainer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 30px;
+    margin-bottom: 0;
+  }
+
+  .imagemobile {
+    display: block;
+    opacity: 1;
+    width: 100%;
+  }
+
+  .right {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    height: auto;
+    width: 100%;
+  }
+
+  .left {
+    height: auto;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .logoContainer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 30px;
+    margin-bottom: 0;
+  }
+
+  .imagemobile {
+    display: block;
+    opacity: 1;
+    width: 100%;
+  }
+
+  .imagemobile img {
+    width: 100%;
+  }
+
+  .right {
+    display: none;
+    opacity: 0;
+  }
+}
+
+/* media queries */
+
+.intro {
+  padding-top: 60px;
+  width: 450px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-weight: 400;
+  color: var(--darkGreyishRed);
+}
+
+.intro span {
+  font-weight: 300;
+  color: var(--DesaturatedRed);
+}
+
+.msg {
+  margin-top: 20px;
+  color: var(--DesaturatedRed);
+  width: 450px;
+  line-height: 1.7rem;
+  font-size: 16px;
+  font-weight: 400;
+  word-wrap: normal;
+}
+
+.emailContainer {
+  margin-top: 40px;
+  position: relative;
+  width: 450px;
+}
+
+.email {
+  padding: 0 30px;
+  height: 50px;
+  width: 400px;
+  border-radius: 50px;
+  border: 1px var(--DesaturatedRed) solid;
+}
+
+.error {
+  position: absolute;
+  top: 25%;
+  right: 120px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.errmsg {
+  position: absolute;
+  top: 55px;
+  left: 30px;
+  color: #ee8c8c;
+  font-size: 13px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.email:focus {
+  outline: none;
+  border: 2px var(--SoftRed) solid;
+}
+
+.btn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  text-align: center;
+  width: 90px;
+  height: 50px;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 9px 18px #ce97978a;
+  outline: none;
+  border: none;
+  z-index: 2;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(135deg, #f5d8d8, #f1a0a0);
+  box-shadow: 0 12px 24px #ce9797d0;
+}
+
+@media screen and (max-width: 375px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro {
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .msg {
+    width: 100%;
+    font-size: 15px;
+    padding: 0 30px;
+    text-align: center;
+    line-height: 1.4rem;
+  }
+
+  .emailContainer {
+    margin: 40px 0;
+    width: 100%;
+    padding: 0 25px;
+  }
+
+  .email {
+    width: 100%;
+  }
+
+  .error {
+    right: 120px;
+  }
+
+  .errmsg {
+    left: 56px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .msg {
+    width: 100%;
+    font-size: 15px;
+    padding: 0 30px;
+    text-align: center;
+    line-height: 1.4rem;
+  }
+
+  .emailContainer {
+    margin: 40px 0;
+    width: 100%;
+    padding: 0 25px;
+  }
+
+  .email {
+    width: 100%;
+  }
+
+  .error {
+    right: 120px;
+  }
+
+  .errmsg {
+    left: 56px;
+  }
+}
+
+footer {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c, #f8bfbf);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.attribution {
+  font-size: 18px;
+  text-align: center;
+}
+.attribution a {
+  color: whitesmoke;
+  text-decoration: none;
+}

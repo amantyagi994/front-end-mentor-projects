@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --cyan: #2ab2af;
+  --brightYellow: #c0df34;
+  --lightGray: #e5eff5;
+  --grayishBlue: #98a6bd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--lightGray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridMain {
+  width: 600px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1080px) {
+  .main {
+    padding: 30px 0;
+  }
+  .gridMain {
+    width: 90%;
+  }
+}
+
+.div-top {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 30px;
+  box-shadow: 0 20px 20px 0 #0000001a;
+}
+
+.title {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--cyan);
+}
+
+.heading {
+  width: 100%;
+  padding: 15px 10px 5px;
+  color: var(--brightYellow);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.div3rd {
+  padding: 5px 10px;
+  color: var(--grayishBlue);
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.cardContainer {
+  width: 100%;
+  display: flex;
+  background-color: #4abebd;
+  border-radius: 0 0 10px 10px;
+}
+
+.cardSubscribe,
+.cardWhyUs {
+  width: 50%;
+  padding: 40px;
+  color: whitesmoke;
+}
+
+.cardSubscribe {
+  background-color: #2bb3b1;
+  border-radius: 0 0 0 10px;
+}
+
+.cardWhyUs {
+  border-radius: 0 0 10px 0;
+}
+
+@media screen and (max-width: 1080px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardSubscribe,
+  .cardWhyUs {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+.cardHead {
+  width: 100%;
+  padding: 0 0 10px 0;
+  font-size: 1rem;
+  color: var(--lightGray);
+}
+
+.cardSubscribe p {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 10px 0 0;
+}
+
+.validity {
+  font-size: 0.9rem;
+  color: #e0e0e0a6;
+}
+
+.accessdetails {
+  width: 100%;
+  font-size: 0.91rem;
+  color: #e7e7e7e1;
+}
+
+.signup {
+  width: 100%;
+  background-color: var(--brightYellow);
+  padding: 15px;
+  margin-top: 25px;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.signup:hover {
+  cursor: pointer;
+  box-shadow: 0 3px 6px 0 #00000034;
+}
+
+.cardWhyUs ul {
+  color: #e7e7e7c4;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(135deg, #c0df34, #2ab2af);
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #0e8381;
+}
+
+footer a {
+  text-decoration: none;
+  color: #d0ff00;
+}

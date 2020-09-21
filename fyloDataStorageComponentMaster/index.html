@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <main>
+      <div class="mainContainer">
+        <div class="leftContainer">
+          <div class="logoContainer">
+            <img src="images/logo.svg" alt="Logo: Fylo" />
+          </div>
+
+          <div class="iconsContainer">
+            <div class="iconDiv">
+              <img
+                src="images/icon-document.svg"
+                alt="icon-document"
+                class="icon"
+              />
+            </div>
+            <div class="iconDiv">
+              <img
+                src="images/icon-folder.svg"
+                alt="icon-folder"
+                class="icon"
+              />
+            </div>
+            <div class="iconDiv">
+              <img
+                src="images/icon-upload.svg"
+                alt="icon-upload"
+                class="icon"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="rightContainer">
+          <div class="limitText">
+            <p>You’ve used 815 GB of your storage</p>
+          </div>
+
+          <div class="limit">
+            <div class="limitBox"><span>185</span> GB Left</div>
+            <div class="limitBoxDownMarker"></div>
+          </div>
+          <input
+            type="range"
+            min="0"
+            max="1024"
+            value="815"
+            class="rangeSlider"
+            id="range"
+            title="rangeSlider"
+          />
+
+          <div class="rangePointers limitText">
+            <div class="pointer">0 GB</div>
+            <div class="pointer">1000 GB</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="https://github.com/amantyagi994"> Aman Tyagi </a>
+      .
+    </div>
+  </body>
+</html>

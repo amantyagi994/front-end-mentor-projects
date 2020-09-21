@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --gradient: linear-gradient(90deg, #ffa399, #ff4d97);
+  --paleBlue: hsl(243, 100%, 93%);
+  --grayishBlue: hsl(229, 7%, 55%);
+  --darkBlue: hsl(228, 56%, 26%);
+  --veryDarkBlue: hsl(229, 57%, 11%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  background: url(images/bg-desktop.svg) no-repeat;
+  background-size: 100% 50%;
+  background-position: bottom;
+  background-color: #1c213d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.leftContainer {
+  height: 13rem;
+  width: 23rem;
+  background-color: var(--darkBlue);
+  border-radius: 10px 100px 10px 10px;
+}
+
+@media only screen and (max-width: 1080px) {
+  main {
+    width: 100%;
+    background-position: 30% 0;
+    background-size: cover;
+  }
+
+  .mainContainer {
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .leftContainer {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.leftContainer .logoContainer {
+  width: 100%;
+  padding: 2rem;
+}
+
+.leftContainer .iconsContainer {
+  display: flex;
+  padding: 0 1rem;
+}
+
+.leftContainer .iconDiv {
+  background-color: var(--veryDarkBlue);
+  height: 3.5rem;
+  width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.rightContainer {
+  position: relative;
+  margin: 0 0 0 2rem;
+  height: 10rem;
+  width: 40rem;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--darkBlue);
+  border-radius: 10px;
+  color: var(--paleBlue);
+}
+
+@media only screen and (max-width: 1080px) {
+  .rightContainer {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.limitText,
+.rangeSlider,
+.rangePointers {
+  width: 100%;
+}
+
+.limitText {
+  padding: 1rem 0;
+}
+
+.limit {
+  position: absolute;
+  bottom: 8.5rem;
+  right: 3rem;
+  height: fit-content;
+}
+
+.limitBox {
+  height: 4rem;
+  width: 10rem;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--grayishBlue);
+}
+
+.limitBox span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--veryDarkBlue);
+  margin: 0 5px;
+}
+
+.limit .limitBoxDownMarker {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid white;
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid white;
+  opacity: 1;
+}
+
+.rangePointers {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1080px) {
+  .limit {
+    right: 50%;
+    top: 100%;
+    transform: translate(50%, -50%);
+  }
+
+  .limit .limitBoxDownMarker {
+    opacity: 0;
+  }
+}
+
+/* -------------- custom range slider -------------- */
+
+html input[type="range"] {
+  outline: 0;
+  height: 18px;
+  max-width: 100%;
+  transition: box-shadow 0.2s ease-in-out;
+  border-radius: 20px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  html input[type="range"] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    background-color: var(--veryDarkBlue);
+    border: 3px solid var(--veryDarkBlue);
+  }
+  html input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    color: #444;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  html input[type="range"]::-webkit-slider-thumb {
+    width: 12px;
+    -webkit-appearance: none;
+    height: 12px;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: -2rem 0 0 1.5rem #ff4d97, -5rem 0 1rem 4rem #ff4d97,
+      -12rem 0 2rem 4rem #f861a0, -19rem 0 2rem 4rem #ffa399,
+      -26rem 0 2rem 4rem #ffa399, -29rem 0 2rem 6rem #ffa399,
+      inset 0 0 0 1px #ff4d97;
+
+    border-radius: 50%;
+    transition: box-shadow 0.2s ease-in-out;
+    position: relative;
+  }
+
+  html input[type="range"]:active::-webkit-slider-thumb {
+    background: #fff;
+    box-shadow: -2rem 0 0 1.5rem #ff4d97, -5rem 0 1rem 4rem #ff4d97,
+      -12rem 0 2rem 4rem #f861a0, -19rem 0 2rem 4rem #ffa399,
+      -26rem 0 2rem 4rem #ffa399, -29rem 0 2rem 6rem #ffa399,
+      inset 0 0 0 1px #ff4d97;
+  }
+}
+html input[type="range"]::-moz-range-progress {
+  background-color: #43e5f7;
+}
+html input[type="range"]::-moz-range-track {
+  background-color: #9a905d;
+}
+html input[type="range"]::-ms-fill-lower {
+  background-color: #43e5f7;
+}
+html input[type="range"]::-ms-fill-upper {
+  background-color: #9a905d;
+}
+
+@media screen and (max-width: 1080px) {
+  html input[type="range"]::-webkit-slider-thumb {
+    box-shadow: -14rem 0 0 13.5rem #ff4d97, -28rem 0 5rem 10rem #ff4d97,
+      -44rem 0 5rem 10rem #ffa399, -60rem 0 10rem 15rem #f0a79e,
+      inset 0 0 0 1px #ff4d97;
+  }
+  html input[type="range"]:active::-webkit-slider-thumb {
+    box-shadow: -10rem 0 0 9.5rem #ff4d97, -20rem 0 5rem 10rem #ff4d97,
+      -30rem 0 5rem 10rem #ffa399, -40rem 0 5rem 10rem #f0a79e,
+      inset 0 0 0 1px #ff4d97;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html input[type="range"]::-webkit-slider-thumb {
+    box-shadow: -10rem 0 0 9.5rem #ff4d97, -20rem 0 5rem 10rem #ff4d97,
+      -30rem 0 5rem 10rem #ffa399, -40rem 0 5rem 10rem #f0a79e,
+      inset 0 0 0 1px #ff4d97;
+  }
+  html input[type="range"]:active::-webkit-slider-thumb {
+    box-shadow: -10rem 0 0 9.5rem #ff4d97, -20rem 0 5rem 10rem #ff4d97,
+      -30rem 0 5rem 10rem #ffa399, -40rem 0 5rem 10rem #f0a79e,
+      inset 0 0 0 1px #ff4d97;
+  }
+}
+
+/* ---x---x---x---x--- custom range slider ---x---x---x---x--- */
+
+/* ------------------- footer ------------------- */
+.attribution {
+  width: 100%;
+  background: var(--gradient);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: var(--paleBlue);
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--veryDarkBlue);
+}
+/* ---x---x---x---x--- footer ---x---x---x---x--- */

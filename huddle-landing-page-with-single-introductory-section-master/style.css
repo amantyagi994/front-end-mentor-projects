@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --Violet: #674baf;
+  --OpenSans: "Open Sans", sans-serif;
+  --Poppins: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body {
+  background: url("images/bg-mobile.svg") no-repeat;
+  background-size: 100%;
+  background-color: var(--Violet);
+  color: white;
+  font-family: var(--OpenSans);
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    height: 100vh;
+    background: url("images/bg-desktop.svg") no-repeat;
+    background-size: contain;
+    background-color: var(--Violet);
+  }
+}
+
+.heading {
+  font-family: var(--Poppins);
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logoContainer {
+  height: 7rem;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 2.5rem;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.containerMain,
+.imageContainer {
+  width: 100%;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 2.5rem 3rem;
+}
+
+.image {
+  width: 100%;
+  max-width: 42rem;
+}
+
+.textContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tagLine {
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+}
+
+.msg {
+  font-size: 1.15rem;
+  padding-bottom: 2.5rem;
+}
+
+.btn {
+  width: 15rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: white;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1080px) {
+  .logoContainer {
+    height: 15vh;
+    padding: 0 5rem;
+  }
+  .containerMain {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+  }
+
+  .imageContainer {
+    width: 60%;
+    padding: 1.5rem 0;
+  }
+
+  .image {
+    width: ;
+  }
+
+  .textContainer1 {
+    width: 40%;
+  }
+
+  .textContainer {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .tagLine {
+    width: 100%;
+    font-weight: 400;
+  }
+
+  .bt;
+}
+
+.socialConnect {
+  width: 100%;
+  padding: 4rem 0 3rem;
+}
+
+.socialIconContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.socialDiv {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+}
+
+@media screen and (min-width: 1080px) {
+  .socialConnect {
+    padding: 1rem;
+  }
+
+  .socialIconContainer {
+    justify-content: flex-end;
+  }
+}
+
+.attribution {
+  width: 100%;
+  border-top: 3px solid #ff00ea;
+  background: #ae00ff;
+  text-align: center;
+  padding: 1rem;
+  color: #00f7ff;
+}
+
+.attribution a {
+  color: white;
+}

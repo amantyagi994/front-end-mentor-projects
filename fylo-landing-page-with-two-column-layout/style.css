@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --veryDarkBlue: #070439;
+  --desaturatedBlue: #585989;
+  --brightBlue: #3065f8;
+  --moderateCyan: #3c9f8f;
+  --lightGrayishBlue: #f6f6fe;
+  --lightGray: #bfbfbf;
+  --Raleway: "Raleway", sans-serif;
+  --OpenSans: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  font-family: var(--OpenSans);
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.heading {
+  font-family: var(--Raleway);
+}
+
+.br5P {
+  border-radius: 5px;
+}
+
+.wd100 {
+  width: 100%;
+}
+
+.flx {
+  display: flex;
+}
+
+.flxColumn {
+  flex-direction: column;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer {
+  padding: 1.5rem;
+  /* background-color: cornflowerblue; */
+}
+
+.logo {
+  height: 2rem;
+}
+
+.navLinks {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  padding: 0 0.3rem;
+  color: #6e6e6e;
+}
+
+@media screen and (min-width: 1080px) {
+  .navBar {
+    padding: 1rem 3rem;
+  }
+
+  .logo {
+    height: 3rem;
+  }
+
+  .navLink {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.image {
+  width: 80%;
+  max-width: 35rem;
+}
+
+.introText {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.introText .heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.5rem 0 1rem;
+}
+
+.introText .para {
+  padding: 1rem;
+  color: #6e6e6e;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.inputBox {
+  width: 90%;
+  max-width: 30rem;
+  border: 2px solid var(--lightGray);
+  padding: 1rem 2rem;
+  color: var(--desaturatedBlue);
+  margin: 0 0 0.5rem;
+}
+
+.btn {
+  width: 90%;
+  max-width: 25rem;
+  padding: 1rem;
+  margin: 0.5rem 0 0;
+}
+
+@media screen and (min-width: 1080px) {
+  .intro {
+    flex-direction: row-reverse;
+    padding: 1rem;
+  }
+
+  .imageContainer {
+    width: 50%;
+    padding: 0;
+  }
+
+  .introText {
+    width: 50%;
+    padding-left: 3.5rem;
+    text-align: left;
+  }
+
+  .introText .heading {
+    font-size: 2.3rem;
+  }
+
+  .introText .para {
+    padding: 1rem 0 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .searchContainer {
+    flex-direction: row;
+    padding: 0 5rem 0 0;
+  }
+
+  .inputBox,
+  .btn {
+    margin: 0 1rem 0 0;
+    padding: 0.8rem;
+  }
+
+  .btn {
+    width: 20rem;
+  }
+}
+
+.btnBlue {
+  color: white;
+  background-color: var(--brightBlue);
+  border: 2px solid var(--brightBlue);
+}
+
+.curve {
+  margin-top: 5rem;
+  height: 3rem;
+  background: url("images/bg-curve-mobile.svg") no-repeat;
+  background-size: 100%;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f8f8fe;
+  padding-bottom: 6rem;
+}
+
+.featureTexContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features .heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--veryDarkBlue);
+}
+
+.illustration2 {
+  padding: 5rem 0;
+}
+
+.textGrey {
+  color: #6e6e6e;
+}
+
+.features .textGrey {
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.05rem;
+}
+
+.a0b0c0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--moderateCyan);
+  height: 4rem;
+  font-family: var(--Raleway);
+}
+
+.a0b0c0 .link {
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--moderateCyan);
+  display: flex;
+  align-items: center;
+}
+
+.link a {
+  color: var(--moderateCyan);
+}
+
+.link span {
+  padding: 0.5rem 0 0 0.5rem;
+}
+
+@media screen and (min-width: 1080px) {
+  .curve {
+    height: 6rem;
+    background: url("images/bg-curve-desktop.svg") no-repeat;
+  }
+  .features {
+    flex-direction: row-reverse;
+    padding: 1rem 1rem 5rem;
+  }
+
+  .featureTexContainer {
+    width: 50%;
+    padding-left: 3.5rem;
+    align-items: flex-start;
+  }
+
+  .features .heading {
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 1rem 0;
+  }
+
+  .features .textGrey {
+    padding-left: 0;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .a0b0c0 {
+    width: 50%;
+    justify-content: flex-start;
+    font-weight: bold;
+  }
+}
+
+.card {
+  width: 80%;
+  max-width: 30rem;
+  box-shadow: 0 0 10px 0 #0000001e;
+  color: var(--desaturatedBlue);
+}
+
+.testimonial {
+  margin-top: 2rem;
+  text-align: left;
+  padding: 1.5rem 0.5rem 1.5rem 1.5rem;
+  background-color: white;
+}
+
+.quotes {
+  height: 1rem;
+}
+
+.testimonialText {
+  padding: 1rem 0;
+  line-height: 1.3rem;
+  font-size: 14px;
+}
+
+.writer {
+  display: flex;
+}
+
+.avatarTestimonial {
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.writerTestimonial {
+  padding: 0 0.5rem;
+  font-weight: bold;
+}
+
+.designation {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  color: var(--desaturatedBlue);
+}
+
+@media screen and (min-width: 1080px) {
+  .card {
+    width: 20rem;
+  }
+  .testimonial {
+    padding: 1.5rem;
+  }
+  .testimonialText {
+    padding: 0.8rem 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .writer {
+    color: var(--veryDarkBlue);
+  }
+}
+
+.earlyAccess {
+  background-color: var(--desaturatedBlue);
+  padding: 0 0 5rem;
+}
+
+.earlyAccessTextDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.earlyAccessTextDiv .heading {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.textEarlyAccess {
+  font-weight: lighter;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  color: var(--lightGray);
+}
+
+.earlyAccessSignupDiv {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1080px) {
+  .earlyAccess {
+    display: flex;
+    padding: 5rem 1rem;
+  }
+
+  .earlyAccessTextDiv,
+  .earlyAccessSignupDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    width: 50%;
+  }
+
+  .earlyAccessTextDiv {
+    padding: 0 3.5rem;
+  }
+
+  .earlyAccessTextDiv .heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .textEarlyAccess {
+    padding: 0;
+  }
+
+  .earlyAccessSignupDiv {
+    padding: 0 5rem;
+  }
+
+  .earlyAccessSignupDiv .btn {
+    margin-top: 1rem;
+    max-width: 12rem;
+  }
+}
+
+.footerDiv {
+  background-color: var(--veryDarkBlue);
+  color: white;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.logoFooter {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.contactMail,
+.contactPhone {
+  padding: 0.5rem 0;
+}
+
+.iconMail,
+.iconTel,
+.phone,
+.mail {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.phone,
+.mail {
+  padding: 0 1.5rem;
+}
+
+.links {
+  flex-direction: column;
+}
+
+.aboutAndBlog,
+.termsAndPrivacy {
+  padding: 2rem 0 1.5rem;
+}
+
+.link {
+  padding: 0.5rem 0;
+}
+
+.socialConnect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialLink {
+  margin: 0 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 1080px) {
+  .footerDiv {
+    padding: 4.5rem 10rem 4.5rem 4.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .links {
+    padding-top: 5rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .aboutAndBlog,
+  .termsAndPrivacy {
+    padding: 1rem 5rem;
+  }
+}
+
+.attribution {
+  border-top: 3px solid var(--brightBlue);
+  padding: 1rem;
+  color: var(--brightBlue);
+  background-color: var(--veryDarkBlue);
+  text-align: center;
+}
