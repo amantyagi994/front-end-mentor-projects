@@ -5,8 +5,7 @@
 	And I completed some front-end mentor challenges, and I'll keep completing 
 	them in future too,
 	I created this repo. to keep track and as a showcase of what I made and all
-	the available work
-	links here.
+	the available work links here.
 
 
 	Here, you will see every link to the working page, I made to commplete 
