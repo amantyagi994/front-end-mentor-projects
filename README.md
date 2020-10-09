@@ -1,19 +1,79 @@
 # front-end-mentor-projects
 
-	Hey there 👋 visitor,
-	I am Aman Tyagi,
-	And I completed some front-end mentor challenges, and I'll keep completing 
+# Hey there 👋 visitor,
+
+## I am Aman Tyagi,
+
+- I completed some front-end mentor challenges, and I'll keep completing 
 	them in future too,
-	I created this repo. to keep track and as a showcase of what I made and all
-	the available work links here.
+	I created this repository to keep track and showcase, what I made and
+	add available working links here.
+
+- Here, you will have link to each of the working page, I made,
+  and the front-end mentor compare page link as well, so that you can see 
+  how my work is and can compare my work to the design they provided:
+
+1. [Fylo Data Storage Component](https://amantyagi994.github.io/fyloDataStorageComponentMaster/)
+
+- [repo](https://github.com/amantyagi994/fyloDataStorageComponentMaster)
+
+- [compare](https://www.frontendmentor.io/solutions/fylo-data-storage-component-using-html-css-HmUjaGRol)
+	
+2. [Coding BootCampe Testimonial](https://amantyagi994.github.io/coding-bootcamp-testimonials/)
+
+- [repo](https://github.com/amantyagi994/coding-bootcamp-testimonials)
+
+- [compare](https://www.frontendmentor.io/solutions/coding-bootcamp-testimonials-slider-cx7ZOerpd)
+	
+3. [Four Card Feature](https://amantyagi994.github.io/fmfourcardfeature/)
+
+- [repo](https://github.com/amantyagi994/fmfourcardfeature)
+
+- [compare](https://www.frontendmentor.io/solutions/four-card-feature-section-Si-S1M7ac)
+	
+4. [Base Apperal Coming Soon](https://amantyagi994.github.io/baseApparelComingSoon/)
+
+- [repo](https://github.com/amantyagi994/baseApparelComingSoon)
+
+- [compare](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-using-html-css-js-S_M8z7foW)
+	
+5. [Intro component with sign-up form](https://amantyagi994.github.io/introComponent/)
+
+- [repo](https://github.com/amantyagi994/introComponent)
+
+- [compare](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-using-html-css-and-js-jphTtvgnF)
+	
+6. [Single price grid component](https://amantyagi994.github.io/single-price-grid-component/)
+
+- [repo](https://github.com/amantyagi994/single-price-grid-component)
+
+- [compare](https://www.frontendmentor.io/solutions/single-price-grid-component-wg0rUX8nK)
+	
+7. [Ping single column coming soon page](https://amantyagi994.github.io/ping-single-column-coming-soon/)
+
+- [repo](https://github.com/amantyagi994/ping-single-column-coming-soon)
+
+- [compare](https://www.frontendmentor.io/solutions/coming-soon-page-My1uFvg55)
+	
+8. [Huddle landing page with a single introductory section](https://amantyagi994.github.io/huddle-landing-page-with-single-introductory-section-master/)
+
+- [repo](https://github.com/amantyagi994/huddle-landing-page-with-single-introductory-section-master)
+
+- [compare](https://www.frontendmentor.io/solutions/huddle-landing-page-with-a-single-introductory-section-using-htmlcss-KCfXnubm-)
+	
+9. [Huddle landing page with alternating feature blocks](https://amantyagi994.github.io/huddle-landing-page-with-alternating-feature-blocks-master/)
+	
+- [repo](https://github.com/amantyagi994/huddle-landing-page-with-alternating-feature-blocks-master)
+
+- [compare](https://www.frontendmentor.io/solutions/huddle-landing-page-with-alternating-feature-blocks-EAkgjxr8x)
+	
+10. [Fylo landing page with two column layout](https://amantyagi994.github.io/fylo-landing-page-with-two-column-layout/)
+	
+- [repo](https://github.com/amantyagi994/fylo-landing-page-with-two-column-layout)
+	
+- [compare](https://www.frontendmentor.io/solutions/fylo-landing-page-with-two-column-layout-usign-html-css-vanilla-js-XitYnSB_H)
 
 
-	Here, you will see every link to the working page, I made to commplete 
-	the front-end mentor challenges and the
-	the front-end mentor compare page link as well, so that you can see
-	How my work is and can compare my work to the design they provided,
+> thanks🙏 for visiting, more coming soon,
 
-
-
-	thanks🙏 for visiting,
-	Have a nice time ahead🤗
+> Have a nice time ahead🤗
