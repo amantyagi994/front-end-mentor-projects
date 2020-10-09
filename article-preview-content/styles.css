@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+:root {
+  --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --desaturatedDarkBlue: hsl(214, 17%, 51%);
+  --grayishBlue: hsl(212, 23%, 69%);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 13px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: rgb(239, 241, 248);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52rem;
+  height: 20rem;
+  border-radius: 1rem;
+  display: flex;
+  /* overflow: hidden; */
+  background: #ffffff;
+  box-shadow: 2px 2px 10px #aaaaaa1a;
+}
+
+.imageContainer {
+  width: 40%;
+  height: 100%;
+  /* background-color: blue; */
+  background: url("./images/drawers.jpg") no-repeat;
+  background-position: top left;
+  background-size: auto 100%;
+  border-radius: 1rem 0 0 1rem;
+}
+
+/* .imageContainer img {
+  width: 25rem;
+} */
+
+.contentContainer {
+  width: 60%;
+  padding: 2.5rem;
+}
+
+.heading {
+  font-size: 1.5rem;
+  color: var(--veryDarkGrayishBlue);
+}
+
+.textBelow {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  color: var(--desaturatedDarkBlue);
+}
+
+.profileContainer {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}
+
+.profile {
+  display: flex;
+}
+
+.profileImage img {
+  width: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 1rem;
+  color: var(--veryDarkGrayishBlue);
+}
+
+.date {
+  color: var(--grayishBlue);
+}
+
+.shareClick {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.shareIconContainer {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--desaturatedDarkBlue);
+}
+
+.shareAfterClick {
+  position: absolute;
+  right: 3.7rem;
+  transform: translateX(50%);
+  bottom: 6.5rem;
+  background: var(--veryDarkGrayishBlue);
+  /* display: flex; */
+  align-items: center;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px #00000055;
+  display: none;
+}
+
+.triangleDown {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 1rem solid var(--veryDarkGrayishBlue);
+  border-right: 1rem solid transparent;
+  border-left: 1rem solid transparent;
+}
+
+.shareAfterClick p {
+  height: 100%;
+  font-size: 1rem;
+  color: var(--grayishBlue);
+  margin: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.socialIcon img {
+  margin: 0.7rem;
+  width: 1.5rem;
+}
+
+.shareClick:checked ~ .shareAfterClick {
+  display: flex;
+}
+
+.attribution {
+  position: absolute;
+  height: 3rem;
+  bottom: 0;
+  width: 100%;
+  background: var(--veryDarkGrayishBlue);
+  color: var(--grayishBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.attribution a {
+  color: var(--desaturatedDarkBlue);
+  text-decoration: none;
+  margin: 0 3px;
+}
