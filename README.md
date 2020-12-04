@@ -96,6 +96,18 @@
 
 - [compare](https://www.frontendmentor.io/solutions/profile-card-component-wsxtCYc-2)
 
+15. [Testimonial Grid Section](https://amantyagi994.github.io/testimonial-grid/)
+
+- [repo](https://github.com/amantyagi994/testimonial-grid)
+
+- [compare](https://www.frontendmentor.io/solutions/testimonial-grid-section-using-html-cssgrid-RUbGrLXvQ)
+
+16. [Clipboard Landing Page](https://amantyagi994.github.io/clipboard-landing-page/)
+
+- [repo](https://github.com/amantyagi994/clipboard-landing-page)
+
+- [compare](https://www.frontendmentor.io/solutions/clipboard-landing-page-using-html-css-0fK9qaefb)
+
 > thanks🙏 for visiting, more coming soon,
 
 > Have a nice time ahead🤗
