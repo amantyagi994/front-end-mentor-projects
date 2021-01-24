@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --Darkcyan: hsl(185, 75%, 39%);
+  --verydarkdesaturatedblue: hsl(229, 23%, 23%);
+  --darkgrayishblue: hsl(227, 10%, 46%);
+  --darkgray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  background: url("./images/bg-pattern-top.svg") left -100% bottom -50%
+      no-repeat,
+    url("./images/bg-pattern-bottom.svg") right -100% top -100% no-repeat;
+  background-color: var(--Darkcyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 374px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.top-pattern {
+  height: 141px;
+  width: 100%;
+  background: url("./images/bg-pattern-card.svg");
+}
+
+.profile-pic {
+  /* position: relative; */
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.5rem solid white;
+  border-radius: 50%;
+}
+
+.userdetail {
+  margin-top: 4.5rem;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  color: var(--darkgray);
+}
+
+.name {
+  color: var(--verydarkdesaturatedblue);
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.city {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--darkgray);
+}
+
+.stats {
+  border-top: 1px solid hsla(0, 0%, 59%, 0.267);
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stats-followers,
+.stats-likes,
+.stats-photos {
+  text-align: center;
+}
+
+.count {
+  font-weight: bold;
+  color: var(--verydarkdesaturatedblue);
+}
+
+.stats-of {
+  color: var(--darkgray);
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+  letter-spacing: 1.5px;
+}
+
+.attribution {
+  background: linear-gradient(175deg, var(--darkgray), var(--darkgrayishblue));
+  padding: 1rem;
+  text-align: center;
+  color: var(--verydarkdesaturatedblue);
+  letter-spacing: 2px;
+}
+
+.attribution a {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+
+.attribution a:hover {
+  opacity: 0.6;
+}
