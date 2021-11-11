@@ -108,6 +108,18 @@
 
 - [compare](https://www.frontendmentor.io/solutions/clipboard-landing-page-using-html-css-0fK9qaefb)
 
+17. [Fylo Dark Theme Landing Page](https://fylo-landing-page-theme-dark.netlify.app/)
+
+- [repo](https://github.com/amantyagi994/fylo-dark-theme-landing-page)
+
+- [compare](https://www.frontendmentor.io/solutions/fylo-dark-theme-using-html-css-with-email-validation-with-js-hlfKVOy1k)
+
+18. [Order Summary Component](https://amantyagi994.github.io/Order-summary-component/)
+
+- [repo](https://github.com/amantyagi994/Order-summary-component)
+
+- [compare](https://www.frontendmentor.io/solutions/responsive-order-summary-component-v2qYiFfUy)
+
 > thanks🙏 for visiting, more coming soon,
 
 > Have a nice time ahead🤗
