@@ -1,0 +1,113 @@
+:root {
+	--bright-orange: hsl(31, 77%, 52%);
+	--dark-cyan: hsl(184, 100%, 22%);
+	--very-dark-cyan: hsl(179, 100%, 13%);
+	--transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+	--very-light-gray: hsl(0, 0%, 95%);
+	--font-big-shoulder: "Big Shoulders Display", cursive;
+	--font-lexend-deca: "Lexend Deca", "sans-serif";
+}
+
+:root * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+}
+
+body {
+	height: 100vh;
+	background-color: var(--very-light-gray);
+	font-family: var(--font-lexend-deca);
+	font-weight: 400;
+}
+
+.cards-container {
+	min-height: 100vh;
+	padding: 3rem 1rem;
+}
+
+.cards-wrapper {
+	width: 100%;
+	max-width: 58rem;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	align-items: stretch;
+	background-color: yellow;
+}
+
+.preview-card {
+	padding: 3rem;
+	min-height: 30rem;
+	min-width: 12rem;
+	margin: 0;
+}
+
+.preview-card h2 {
+	padding: 2rem 0;
+	font-family: var(--font-big-shoulder);
+	font-size: 2.5rem;
+}
+
+.preview-card p {
+	line-height: 1.6;
+	font-size: 0.9rem;
+	color: var(--transparent-white-paragraphs);
+}
+
+.preview-card.card-sedan {
+	background-color: var(--bright-orange);
+}
+
+.preview-card.card-sedan .btn {
+	color: var(--bright-orange);
+}
+
+.preview-card.card-suv {
+	background-color: var(--dark-cyan);
+}
+
+.preview-card.card-suv .btn {
+	color: var(--dark-cyan);
+}
+
+.preview-card.card-luxury {
+	background-color: var(--very-dark-cyan);
+}
+
+.preview-card.card-luxury .btn {
+	color: var(--very-dark-cyan);
+}
+
+.preview-card .btn-wrapper {
+	padding: 4rem 0 0;
+}
+
+.preview-card .btn {
+	padding: 0.5rem 1.5rem;
+	border-radius: 5rem;
+	transition: 0.3s ease;
+}
+
+.preview-card .btn-wrapper .btn:hover {
+	background-color: transparent !important;
+	color: white;
+}
+
+.attribution {
+	padding: 1rem;
+	background-color: var(--dark-cyan);
+	color: var(--transparent-white-paragraphs);
+	text-align: center;
+}
+
+.attribution a {
+	color: var(--bright-orange);
+	text-decoration: none;
+	transition: 0.3s ease;
+}
+
+.attribution a:hover {
+	color: white;
+}
