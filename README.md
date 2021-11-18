@@ -120,6 +120,12 @@
 
 - [compare](https://www.frontendmentor.io/solutions/responsive-order-summary-component-v2qYiFfUy)
 
+19. [3 Column Preview Card Component](https://amantyagi994.github.io/3-column-preview-card/)
+
+- [repo](https://github.com/amantyagi994/3-column-preview-card)
+
+- [compare](https://www.frontendmentor.io/solutions/responsive-3column-preview-card-component-YqPf7sRVU)
+
 > thanks🙏 for visiting, more coming soon,
 
 > Have a nice time ahead🤗
